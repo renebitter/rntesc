@@ -1,6 +1,6 @@
 # React, Next, Typescript, ESlint & Styled Components
 
-###Development process:
+Development process:
 
 ```bash
 yarn create next-app
