@@ -1,10 +1,13 @@
-## React, Next, Typescript, ESlint & Styled Components
+# React, Next, Typescript, ESlint & Styled Components
 
-After yarn create next-app:
+###Development process:
 
 ```bash
+yarn create next-app
 yarn add typescript @types/react @types/node -D
 yarn add prettier eslint-plugin-prettier eslint-config-prettier -D
+yarn add styled-components
+yarn add @types/styled-components -D
 ```
 
 Additional ESlint config `.eslintrc.json` :
@@ -28,7 +31,7 @@ Additional ESlint config `.eslintrc.json` :
 
 `prettier.config.js` commented out
 
-VSCode `editorconfig` extension divergent config:
+vscode extension `.editorconfig` additional config:
 
 ```bash
 end_of_line = lf
@@ -36,11 +39,7 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 ```
 
-```bash
-yarn add styled-components
-yarn add @types/styled-components -D
-```
+SSR for styled-components:
 
-`.babelrc` or `babel.config.js`
-
-Test SSR from Styled Components by disabling JS in the browser.
+`.babelrc` or `babel.config.js` as well as `_document.tsx`
+Test by disabling JS in the browser.
