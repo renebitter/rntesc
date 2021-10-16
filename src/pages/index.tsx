@@ -1,19 +1,22 @@
 import Head from 'next/head';
 
+import SignNext from '../assets/sign-next.svg';
+import { Container } from '../styles/pages/Home';
+
 //TODO: update React.FC since its use is discouraged.
 const Home: React.FC = () => {
     return (
-        <div>
+        <Container>
             <Head>
                 <title>
                     React Next Typescript ESlint &amp; Styled Components
                 </title>
             </Head>
 
-            <main>
-                <h1>React Next Typescript ESlint &amp; Styled Components</h1>
-            </main>
-        </div>
+            <SignNext />
+            <h1>React Next Typescript ESlint &amp; Styled Components</h1>
+            <p>React Next Typescript ESlint &amp; Styled Components</p>
+        </Container>
     );
 };
 

@@ -1,6 +1,13 @@
 //serve the required styles for the first render within the HTML and then load the rest in the client (Styled Components)
 
-import Document, { DocumentContext, DocumentInitialProps } from 'next/document';
+import Document, {
+    DocumentContext,
+    DocumentInitialProps,
+    Head,
+    Html,
+    Main,
+    NextScript
+} from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -30,5 +37,23 @@ export default class MyDocument extends Document {
         } finally {
             sheet.seal();
         }
+    }
+
+    render(): JSX.Element {
+        return (
+            <Html lang="en">
+                <Head>
+                    <meta charSet="utf-8" />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700"
+                        rel="stylesheet"
+                    ></link>
+                </Head>
+                <body>
+                    <Main />
+                    <NextScript />
+                </body>
+            </Html>
+        );
     }
 }

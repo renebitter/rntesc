@@ -8,6 +8,7 @@ yarn add typescript @types/react @types/node -D
 yarn add prettier eslint-plugin-prettier eslint-config-prettier -D
 yarn add styled-components
 yarn add @types/styled-components -D
+yarn add babel-plugin-inline-react-svg -D //for improved svg performance instead of base64
 ```
 
 Additional ESlint config `.eslintrc.json` :
